@@ -1,0 +1,6 @@
+@import url(./vars.css);
+
+ul,
+ol {
+  list-style-type: none;
+}
