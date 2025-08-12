@@ -1,6 +1,103 @@
-@import url(./vars.css);
+:root {
+  --font-family: "Open Sans", sans-serif;
+  --main-background-color: #fff;
+  --sub-background-color: #f6f6f6;
+  --main-text-color: #070707;
+  --sub-text-color: #828282;
+  --main-font-weight: 700;
+  --sub-font-weight: 400;
+  --main-font-size: 34px;
+  --sub-font-size: 18px;
+  --small-font-size: 14px;
+}
 
-ul,
-ol {
-  list-style-type: none;
+ol,
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: var(--font-family);
+}
+img {
+  display: block;
+}
+.container {
+  margin: 0 auto;
+  max-width: 970px;
+}
+.padding {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.nav {
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  color: var(--sub-text-color);
+  border-bottom: 1px solid var(--sub-text-color);
+}
+
+.nav__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+.nav__menu:hover,
+.nav__menu:focus {
+  color: var(--sub-text-color);
+}
+.section__hero {
+  background: var(--main-background-color);
+  /* min-height: 497px; */
+}
+.menu__item {
+  margin: 0 40px;
+}
+.section__about {
+  min-height: 500px;
+  background: var(--sub-background-color);
+}
+.menu__link {
+}
+.main__title {
+  margin: 12px 0 50px;
+}
+.photo {
+}
+.second__title {
+}
+.text {
+}
+.section__skills {
+  min-height: 564px;
+}
+.third__title {
+}
+.menu__product {
+}
+.list__product {
+}
+.prod__cont {
+}
+.img__prod {
+}
+.fourth__title {
+}
+.img__star {
+}
+.section__portfolio {
+}
+.footer {
+  min-height: 400px;
+}
+.button {
+  cursor: pointer;
+}
+.footer__text {
 }

@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HW-5</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
@@ -11,13 +17,23 @@
   <body>
     <header class="header">
       <div class="container">
-        <nav class="nav__menu">
-          <ul class="menu">
-            <li class="menu__link">Home</li>
-            <li class="menu__link">About me</li>
-            <li class="menu__link">Skills</li>
-            <li class="menu__link">Portfolio</li>
-            <li class="menu__link">Contacts</li>
+        <nav class="nav">
+          <ul class="nav__menu">
+            <li class="menu__item">
+              <a class="menu-link" href="./index.html">Home</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu-link" href="#about">About me</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu-link" href="#skills">Skills</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu-link" href="#contacts">Contacts</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -26,32 +42,35 @@
     <main>
       <section class="section__hero">
         <div class="container">
-          <h1 class="main__title"></h1>
+          <h1 class="main__title">Denis Novik</h1>
           <img
             class="photo"
             src="./assets/img/images/denis.jpg"
-            alt="Photo Denis Novik"
+            alt="Photo
+          Denis Novik"
+            width="970px"
+            height="387px"
           />
         </div>
       </section>
 
-      <section class="section__about">
+      <section class="section__about padding" id="about">
         <div class="container">
-          <h2 class="second__title"></h2>
+          <h2 class="second__title">About me</h2>
           <ul class="menu">
-            <li class="menu__link">
+            <li class="menu__item">
               <p class="text">
                 Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in
                 design and everything connected with it.
               </p>
             </li>
-            <li class="menu__link">
+            <li class="menu__item">
               <p class="text">
                 I'm studying at courses "Web and mobile design interfaces" in
                 IT-Academy.
               </p>
             </li>
-            <li class="menu__link">
+            <li class="menu__item">
               <p class="text">
                 Ready to implement excellent projects with wonderful people.
               </p>
@@ -60,7 +79,7 @@
         </div>
       </section>
 
-      <section class="section__skills">
+      <section class="section__skills padding" id="skills">
         <div class="container">
           <h2 class="second__title">Skills</h2>
 
@@ -262,11 +281,11 @@
         </div>
       </section>
 
-      <section class="section__portfolio">
+      <section class="section__portfolio padding" id="portfolio">
         <div class="container">
           <h2 class="second__title">Portfolio</h2>
           <ul class="menu">
-            <li class="menu__link">
+            <li class="menu__item">
               <ul>
                 <li>
                   <img
@@ -281,7 +300,7 @@
               </ul>
             </li>
 
-            <li class="menu__link">
+            <li class="menu__item">
               <ul>
                 <li>
                   <img src="./assets/img/images/reebok.png" alt="Reebok" />
@@ -293,7 +312,7 @@
               </ul>
             </li>
 
-            <li class="menu__link">
+            <li class="menu__item">
               <ul>
                 <li>
                   <img
@@ -312,30 +331,30 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="contacts">
       <div class="container">
         <h2 class="second__title">Contacts</h2>
-        <p class="third__title">
+        <p class="footer__text">
           Want to know more or just chat? You are welcome!
         </p>
         <button class="button" type="button">Send message</button>
         <ul class="menu">
-          <li class="menu__link">
+          <li class="menu__item">
             <a href="https://ua.linkedin.com/">
               <img src="./assets/img/vectors/linkedin.svg" alt="Linkedin"
             /></a>
           </li>
-          <li class="menu__link">
+          <li class="menu__item">
             <a href="https://www.instagram.com/">
               <img src="./assets/img/vectors/instagram.svg" alt="Instagram"
             /></a>
           </li>
-          <li class="menu__link">
+          <li class="menu__item">
             <a href="https://www.behance.net/">
               <img src="./assets/img/vectors/behance.svg" alt="Behance"
             /></a>
           </li>
-          <li class="menu__link">
+          <li class="menu__item">
             <a href="https://dribbble.com/">
               <img src="./assets/img/vectors/dribbble.svg" alt="Dribble"
             /></a>
