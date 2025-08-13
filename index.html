@@ -17,22 +17,22 @@
   <body>
     <header class="header">
       <div class="container">
-        <nav class="nav">
+        <nav class="navigation">
           <ul class="nav__menu">
             <li class="menu__item">
-              <a class="menu-link" href="./index.html">Home</a>
+              <a class="menu__link" href="./index.html">Home</a>
             </li>
             <li class="menu__item">
-              <a class="menu-link" href="#about">About me</a>
+              <a class="menu__link" href="#about">About me</a>
             </li>
             <li class="menu__item">
-              <a class="menu-link" href="#skills">Skills</a>
+              <a class="menu__link" href="#skills">Skills</a>
             </li>
             <li class="menu__item">
-              <a class="menu-link" href="#portfolio">Portfolio</a>
+              <a class="menu__link" href="#portfolio">Portfolio</a>
             </li>
             <li class="menu__item">
-              <a class="menu-link" href="#contacts">Contacts</a>
+              <a class="menu__link" href="#contacts">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -57,25 +57,20 @@
       <section class="section__about padding" id="about">
         <div class="container">
           <h2 class="second__title">About me</h2>
-          <ul class="menu">
-            <li class="menu__item">
-              <p class="text">
-                Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in
-                design and everything connected with it.
-              </p>
-            </li>
-            <li class="menu__item">
-              <p class="text">
-                I'm studying at courses "Web and mobile design interfaces" in
-                IT-Academy.
-              </p>
-            </li>
-            <li class="menu__item">
-              <p class="text">
-                Ready to implement excellent projects with wonderful people.
-              </p>
-            </li>
-          </ul>
+
+          <div class="about__cont">
+            <p class="text">
+              Hi, I'm Denis - UX/UI designer from Minsk.<br />I'm interested in
+              design and everything connected with it.
+            </p>
+            <p class="text">
+              I'm studying at courses “Web and mobile design interfaces” in
+              IT-Academy.
+            </p>
+            <p class="text">
+              Ready to implement excellent projects<br />with wonderful people.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -83,18 +78,20 @@
         <div class="container">
           <h2 class="second__title">Skills</h2>
 
-          <h3 class="third__title">I work in such programs as</h3>
+          <h3 class="third__title skills__title">I work in such programs as</h3>
 
-          <u class="menu__product">
+          <ul class="menu__product">
             <li class="list__product">
               <div class="prod__cont">
                 <img
                   class="img__prod"
                   src="./assets/img/vectors/ps.svg"
                   alt="Adobe Photoshop"
+                  width="80"
+                  height="80"
                 />
                 <h4 class="fourth__title">Adobe Photoshop</h4>
-                <ul class="menu">
+                <ul class="menu__star">
                   <li>
                     <img
                       class="img__star"
@@ -140,9 +137,11 @@
                   class="img__prod"
                   src="./assets/img/vectors/ai.svg"
                   alt="Adobe Illustrator"
+                  width="80"
+                  height="80"
                 />
                 <h4 class="fourth__title">Adobe Illustrator</h4>
-                <ul class="menu">
+                <ul class="menu__star">
                   <li>
                     <img
                       class="img__star"
@@ -188,9 +187,11 @@
                   class="img__prod"
                   src="./assets/img/vectors/ae.svg"
                   alt="Adobe After Effects"
+                  width="80"
+                  height="80"
                 />
                 <h4 class="fourth__title">Adobe After Effects</h4>
-                <ul class="menu">
+                <ul class="menu__star">
                   <li>
                     <img
                       class="img__star"
@@ -236,9 +237,11 @@
                   class="img__prod"
                   src="./assets/img/vectors/figma.svg"
                   alt="Figma"
+                  width="80"
+                  height="80"
                 />
                 <h4 class="fourth__title">Figma</h4>
-                <ul class="menu">
+                <ul class="menu__star">
                   <li>
                     <img
                       class="img__star"
@@ -277,16 +280,17 @@
                 </ul>
               </div>
             </li>
-          </u>
+          </ul>
         </div>
       </section>
 
       <section class="section__portfolio padding" id="portfolio">
         <div class="container">
           <h2 class="second__title">Portfolio</h2>
+
           <ul class="menu">
-            <li class="menu__item">
-              <ul>
+            <li class="menu__item potr__item">
+              <ul class="menu">
                 <li>
                   <img
                     src="./assets/img/images/fashion-store.png"
@@ -295,25 +299,29 @@
                 </li>
 
                 <li>
-                  <h3 class="third__title">Online fashion store - Homepage</h3>
+                  <h3 class="third__title port__title">
+                    Online fashion store - Homepage
+                  </h3>
                 </li>
               </ul>
             </li>
 
             <li class="menu__item">
-              <ul>
+              <ul class="menu">
                 <li>
                   <img src="./assets/img/images/reebok.png" alt="Reebok" />
                 </li>
 
                 <li>
-                  <h3 class="third__title">Reebok Store - Concept</h3>
+                  <h3 class="third__title port__title">
+                    Reebok Store - Concept
+                  </h3>
                 </li>
               </ul>
             </li>
 
             <li class="menu__item">
-              <ul>
+              <ul class="menu">
                 <li>
                   <img
                     src="./assets/img/images/braun-landing.png"
@@ -322,7 +330,9 @@
                 </li>
 
                 <li>
-                  <h3 class="third__title">Braun Landing Page - Concept</h3>
+                  <h3 class="third__title port__title">
+                    Braun Landing Page - Concept
+                  </h3>
                 </li>
               </ul>
             </li>
@@ -334,34 +344,50 @@
     <footer class="footer" id="contacts">
       <div class="container">
         <h2 class="second__title">Contacts</h2>
-        <p class="footer__text">
-          Want to know more or just chat? You are welcome!
-        </p>
+        <h3 class="footer__title">
+          Want to know more or just chat?<br />You are welcome!
+        </h3>
         <button class="button" type="button">Send message</button>
-        <ul class="menu">
+        <ul class="menu__media">
           <li class="menu__item">
             <a href="https://ua.linkedin.com/">
-              <img src="./assets/img/vectors/linkedin.svg" alt="Linkedin"
+              <img
+                src="./assets/img/vectors/linkedin.svg"
+                alt="Linkedin"
+                width="40"
+                height="40"
             /></a>
           </li>
           <li class="menu__item">
             <a href="https://www.instagram.com/">
-              <img src="./assets/img/vectors/instagram.svg" alt="Instagram"
+              <img
+                src="./assets/img/vectors/instagram.svg"
+                alt="Instagram"
+                width="40"
+                height="40"
             /></a>
           </li>
           <li class="menu__item">
             <a href="https://www.behance.net/">
-              <img src="./assets/img/vectors/behance.svg" alt="Behance"
+              <img
+                src="./assets/img/vectors/behance.svg"
+                alt="Behance"
+                width="40"
+                height="40"
             /></a>
           </li>
           <li class="menu__item">
             <a href="https://dribbble.com/">
-              <img src="./assets/img/vectors/dribbble.svg" alt="Dribble"
+              <img
+                src="./assets/img/vectors/dribbble.svg"
+                alt="Dribble"
+                width="40"
+                height="40"
             /></a>
           </li>
         </ul>
         <p class="footer__text">
-          Like me on LinkedIn, Instagram, Behance, Dribble
+          Like me on<br />LinkedIn, Instagram, Behance,<br />Dribble
         </p>
       </div>
     </footer>
