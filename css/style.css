@@ -52,13 +52,17 @@
   color: var(--text);
 }
 .text {
+  font-weight: 500;
+  font-size: 16px;
+  /* line-height: 26px; */
+  line-height: 1.625;
+}
+.first__txt {
   font-weight: 400;
   font-size: 18px;
   /* line-height: 28px; */
   line-height: 1.55556;
-  color: var(--text);
 }
-
 .frst_btn {
   margin-top: 20px;
 }
@@ -88,6 +92,11 @@
   font-size: 36px;
   color: var(--text);
   max-width: 539px;
+
+  margin-bottom: 20px;
+}
+.fit__title {
+  margin-bottom: 0;
   margin: 0 auto;
 }
 .features__cont {
@@ -130,11 +139,21 @@
 footer {
   margin-top: 100px;
 }
+.card {
+  margin-top: 30px;
+  color: #544837;
+}
+.fourth__title {
+  margin-bottom: 10px;
+}
 
 /* =====PRODUCT======section=================== */
 
 .product__managers {
   margin-top: 119px;
+}
+.prod__cont {
+  max-width: 505px;
 }
 
 /* ===MSRKETER========section=================== */
