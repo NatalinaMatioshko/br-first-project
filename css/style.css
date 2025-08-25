@@ -2,14 +2,46 @@
 @import url(./vars.css);
 
 body {
-  font-family: "Roboto", sans-serif;
-  background: #3b3f45;
+  font-family: "Montserrat", sans-serif;
 }
 ul {
   list-style: none;
   padding-left: 0;
 }
 .container {
-  max-width: 534px;
+  max-width: 1200px;
   margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+}
+.header__menu {
+  display: flex;
+}
+.section {
+  min-width: 1440px;
+}
+.side__container {
+  display: flex;
+}
+.background {
+  background-image: url(../assets/img/icons/bg.svg);
+  background-repeat: no-repeat;
+}
+.menu__features {
+  display: flex;
+}
+
+.ben__list {
+  display: flex;
+  gap: 30px;
+}
+/* ===========footer=================== */
+
+.footer {
+  border-top: 1px solid rgba(188, 208, 229, 0.5);
+}
+.foo__cont {
+  display: flex;
 }
