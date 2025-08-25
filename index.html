@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Productly HW-9</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="icon"
       type="image/x-icon"
@@ -15,15 +21,29 @@
     <header class="header">
       <div class="container">
         <nav class="nav">
-          <img class="logo" src="./assets/img/icons/logo.svg" alt="logo" />
+          <a href="./index.html"
+            ><img class="logo" src="./assets/img/icons/logo.svg" alt="logo"
+          /></a>
+
           <ul class="menu header__menu">
-            <li class="menu__item">Product</li>
-            <li class="menu__item">Customers</li>
-            <li class="menu__item">Pricing</li>
-            <li class="menu__item">Resources</li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Product</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Customers</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Pricing</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Resources</a>
+            </li>
           </ul>
-          <button class="sign__btn button" type="button">Sign In</button>
-          <button class="sign__btn button" type="button">Sign Up</button>
+
+          <div class="btn__cont">
+            <button class="button" type="button">Sign In</button>
+            <button class="button" type="button">Sign Up</button>
+          </div>
         </nav>
       </div>
     </header>
@@ -37,12 +57,15 @@
               Tools, tutorials, design and innovation experts, all in one place!
               The most intuitive way to imagine your next user experience.
             </p>
-            <button class="button btn__large" type="button">Get started</button>
+            <button class="button btn__large frst_btn" type="button">
+              Get started
+            </button>
           </div>
+
           <img
             class="image__first"
             src="./assets/img/images/image_1.png"
-            alt=""
+            alt="The Design Thinking superpowers"
           />
         </div>
       </section>
@@ -52,34 +75,64 @@
           <h2 class="second__title">
             We design tools to unveil your superpowers
           </h2>
-          <div class="background">
+          <div class="features__cont">
             <ul class="menu menu__features">
               <li class="menu__item">
-                <div>
-                  <img src="./assets/img/icons/first_click.svg" alt="Icon" />
-                  <h3>First click tests</h3>
-                  <p>While most people enjoy casino gambling,</p>
+                <div class="feature__card">
+                  <img
+                    class="feature__icon"
+                    src="./assets/img/icons/first_click.svg"
+                    alt="Icon"
+                    width="50"
+                    height="50"
+                  />
+                  <h3 class="third__title feature__title">First click tests</h3>
+                  <p class="text feture__text">
+                    While most people enjoy casino gambling,
+                  </p>
                 </div>
               </li>
               <li class="menu__item">
-                <div>
-                  <img src="./assets/img/icons/design.svg" alt="Icon" />
-                  <h3>Design surveys</h3>
-                  <p>Sports betting, lottery and bingo playing for the fun</p>
+                <div class="feature__card">
+                  <img
+                    class="feature__icon"
+                    src="./assets/img/icons/design.svg"
+                    alt="Icon"
+                    width="50"
+                    height="50"
+                  />
+                  <h3 class="third__title feature__title">Design surveys</h3>
+                  <p class="text feture__text">
+                    Sports betting, lottery and bingo playing for the fun
+                  </p>
                 </div>
               </li>
               <li class="menu__item">
-                <div>
-                  <img src="./assets/img/icons/preference.svg" alt="Icon" />
-                  <h3>Preference tests</h3>
-                  <p>The Myspace page defines the individual.</p>
+                <div class="feature__card">
+                  <img
+                    class="feature__icon"
+                    src="./assets/img/icons/preference.svg"
+                    alt="Icon"
+                    width="50"
+                    height="50"
+                  />
+                  <h3 class="third__title feature__title">Preference tests</h3>
+                  <p class="text feture__text">
+                    The Myspace page defines the individual.
+                  </p>
                 </div>
               </li>
               <li class="menu__item">
-                <div>
-                  <img src="./assets/img/icons/five_sec.svg" alt="Icon" />
-                  <h3>Five second tests</h3>
-                  <p>
+                <div class="feature__card">
+                  <img
+                    class="feature__icon"
+                    src="./assets/img/icons/five_sec.svg"
+                    alt="Icon"
+                    width="50"
+                    height="50"
+                  />
+                  <h3 class="third__title feature__title">Five second tests</h3>
+                  <p class="text feture__text">
                     Personal choices and the overall personality of the person.
                   </p>
                 </div>
@@ -94,9 +147,9 @@
         <div class="container side__container">
           <div>
             <div>
-              <p>Effortless Validation for</p>
+              <p class="text">Effortless Validation for</p>
               <h2 class="second__title">Design Professionals</h2>
-              <p>
+              <p class="text">
                 The Myspace page defines the individual, his or her
                 characteristics, traits, personal choices and the overall
                 personality of the person.
@@ -107,7 +160,7 @@
               <li>
                 <div>
                   <h4>Accessory makers</h4>
-                  <p>
+                  <p class="text">
                     While most people enjoy casino gambling, sports betting,
                     lottery and bingo playing for the fun
                   </p>
@@ -116,7 +169,7 @@
               <li>
                 <div>
                   <h4>Alterationists</h4>
-                  <p>
+                  <p class="text">
                     If you are looking for a new way to promote your business
                     that won’t cost you more money,
                   </p>
@@ -125,7 +178,7 @@
               <li>
                 <div>
                   <h4>Custom Design designers</h4>
-                  <p>
+                  <p class="text">
                     If you are looking for a new way to promote your business
                     that won’t cost you more money,
                   </p>
@@ -134,7 +187,10 @@
             </ul>
           </div>
 
-          <img src="./assets/img/images/Image_2.png" alt="" />
+          <img
+            src="./assets/img/images/Image_2.png"
+            alt="Design Professionals"
+          />
         </div>
       </section>
 
@@ -143,9 +199,9 @@
           <img src="./assets/img/images/Image_3.png" alt="" />
           <div>
             <div>
-              <p>Easier decision making for</p>
+              <p class="text">Easier decision making for</p>
               <h2 class="second__title">Product Managers</h2>
-              <p>
+              <p class="text">
                 The Myspace page defines the individual, his or her
                 characteristics, traits, personal choices and the overall
                 personality of the person.
@@ -156,7 +212,7 @@
               <li class="menu__item">
                 <div class="ben__list">
                   <img src="./assets/img/icons/done.svg" alt="done" />
-                  <p>
+                  <p class="text">
                     Never worry about overpaying for your energy bill again.
                   </p>
                 </div>
@@ -164,7 +220,7 @@
               <li class="menu__item">
                 <div class="ben__list">
                   <img src="./assets/img/icons/done.svg" alt="done" />
-                  <p>
+                  <p class="text">
                     We will only switch you to energy companies that we trust
                     and will treat you right.
                   </p>
@@ -173,7 +229,7 @@
               <li class="menu__item">
                 <div class="ben__list">
                   <img src="./assets/img/icons/done.svg" alt="done" />
-                  <p>
+                  <p class="text">
                     We track the markets daily and know where the savings are.
                   </p>
                 </div>
@@ -187,9 +243,9 @@
         <div class="container side__container">
           <div>
             <div>
-              <p>Optimisation for</p>
+              <p class="text">Optimisation for</p>
               <h2 class="second__title">Marketers</h2>
-              <p>
+              <p class="text">
                 Few would argue that, despite the advancements of feminism over
                 the past three decades, women still face a double standard when
                 it comes to their behavior.
@@ -200,7 +256,7 @@
               <li>
                 <div>
                   <h4>Accessory makers</h4>
-                  <p>
+                  <p class="text">
                     While most people enjoy casino gambling, sports betting,
                     lottery and bingo playing for the fun.
                   </p>
@@ -209,7 +265,7 @@
               <li>
                 <div>
                   <h4>Alterationists</h4>
-                  <p>
+                  <p class="text">
                     If you are looking for a new way to promote your business
                     that won’t cost you more money,
                   </p>
@@ -218,7 +274,7 @@
               <li>
                 <div>
                   <h4>Custom Design designers</h4>
-                  <p>
+                  <p class="text">
                     If you are looking for a new way to promote your business
                     that won’t cost you more money,
                   </p>
@@ -234,35 +290,41 @@
 
     <footer class="footer">
       <div class="container foo__cont">
-        <img src="./assets/img/icons/logo.svg" alt="logo foo__logo" />
-        <div>
-          <h3>Quick Links</h3>
-          <ul>
+        <a href="./index.html"
+          ><img src="./assets/img/icons/logo.svg" alt="logo foo__logo"
+        /></a>
+
+        <div class="foo_list">
+          <h3 class="third__title foo_title">Quick Links</h3>
+          <ul class="foo__menu">
             <li>About Us</li>
             <li>Blog</li>
             <li>Contact</li>
             <li>FAQ</li>
           </ul>
         </div>
-        <div>
-          <h3>Legal Stuff</h3>
-          <ul>
+        <div class="foo_list">
+          <h3 class="third__title foo_title">Legal Stuff</h3>
+          <ul class="foo__menu">
             <li>Disclaimer</li>
             <li>Financing</li>
             <li>Privacy Policy</li>
             <li>Terms of Service</li>
           </ul>
         </div>
-        <div>
-          <h3>Knowing you're always on the best energy deal.</h3>
+        <div class="input__card">
+          <h3 class="third__title foo_title">
+            Knowing you're always on the best energy deal.
+          </h3>
           <input
+            class="input"
             type="tel"
             name="phone"
             placeholder="Enter your phone Number"
             pattern="^\+380\d{9}$"
             required
           />
-          <button class="button btn__large" type="button"></button>
+          <button class="button btn__large" type="button">Sign up Now</button>
         </div>
       </div>
     </footer>
