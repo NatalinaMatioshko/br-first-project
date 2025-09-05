@@ -174,8 +174,8 @@ body {
 }
 
 .gear {
-  position: absolute;
-  left: 700px;
+  position: fixed;
+  left: 1012px;
 
   z-index: -1;
 }
